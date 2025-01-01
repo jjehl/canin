@@ -1,73 +1,106 @@
 <template>
   <v-app>
     <v-main>
+      <!-- Conteneur principal -->
       <v-container>
-        <v-row style="background-image: url('/images/background-cpl.jpg'); background-size: cover; background-position: center;">
-          <v-col>
-            <h1>Éducation canine</h1>
-            <h1>Comportement</h1>
-            <h1>Formation des maîtres</h1>
-            <br>
-            <h2>Méthode Positive non permissive</h2><br>
-            <h2>Séances à domicile</h2><br>
-            <h2>Toutes races, tous âges </h2> <p> (de 2 mois à 10 ans et +)</p><br>
-            <h2>Secteur Lyon Nord :</h2>
-            <p>
-               Rillieux-la-Pape, Sathonay-Camp, Caluire et Cuire, Neyron, Miribel, Beynost…
-            </p>
+        <v-row class="d-flex flex-column justify-center align-center text-center">
+          <p>ASSOCIATION loi 1901 : Pour la prévention des morsures, des abandons et des euthanasies</p>
+        </v-row>
+        <!-- Section avec l'image et les 3 lignes de texte -->
+        <v-row align="center" justify="space-between" class="flex-wrap">
+          <!-- Image à gauche -->
+          <v-col cols="12" md="6" class="d-flex justify-center">
+            <v-img
+                src="/images/background-cpl.jpg"
+                alt="Éducation canine"
+                max-height="500"
+                max-width="500"
+                class="rounded-image"
+                contain
+            ></v-img>
+          </v-col>
+
+          <!-- Texte à droite -->
+          <v-col cols="12" md="6">
+            <v-row class="d-flex flex-column justify-center align-center text-center">
+              <h1>Éducation canine</h1>
+              <h1>Comportement</h1>
+              <h1>Formation des maîtres</h1>
+              <br>
+
+            </v-row>
+            <v-row class="d-flex flex-column justify-center align-center text-center">
+              <h3>Méthode Positive non permissive</h3>
+
+              <h3>Séances à domicile</h3>
+
+            </v-row>
           </v-col>
         </v-row>
+
+        <!-- Contenu supplémentaire en dessous -->
         <v-row>
-          <v-col>
-            <h2>Votre chien …</h2> <p>tire en laisse ? … aboie trop ? … saute ? … ne vous écoute pas ?<br>… détruit ? … vole ? … agresse ? … craint tout ?</p><br>
-            <h2>Vous avez un chiot et vous souhaitez l’éduquer ?</h2><p>Nous avons des solutions !<br>Apprenez sa langue.</p>
-
-
-           </v-col>
+          <v-col class="d-flex flex-column justify-center align-center text-center">
+            <h3>Toutes races, tous âges </h3>
+            <p>(de 2 mois à 10 ans et +)</p>
+            <br>
+            <h3>Secteur Lyon Nord </h3>
+            <p>
+              Rillieux-la-Pape, Sathonay-Camp, Caluire et Cuire, Neyron, Miribel,
+              Beynost…
+            </p>
+            <br>
+            <h3>Votre chien…</h3>
+            <p>
+              … tire en laisse ? … aboie trop ? … saute ? … ne vous écoute pas ?
+              … détruit ? … vole ? … agresse ? … craint tout ?
+            </p>
+            <br>
+            <h3>Vous avez un chiot…</h3>
+            <p>
+              … et vous souhaitez l’éduquer ?
+            </p>
+            <br>
+          </v-col>
         </v-row>
-
-
-
-        <v-row>
-          <v-col>
-            <h2>Contactez-nous !</h2>
-            <p><a href="tel:0673338459">06.73.33.84.59</a></p>
+        <v-row
+            class="d-flex flex-wrap justify-space-between justify-center align-center text-center pa-4 rounded-lg elevation-2">
+          <!-- contact à gauche -->
+          <v-col cols="12" md="6" class="d-flex flex-column justify-center align-center">
+            <p><strong>CONTACTEZ-NOUS !</strong></p>
+            <p>06.73.33.84.59</p>
             <p>Du lundi au samedi</p>
             <p>De 8h30 à 20h</p>
-            <p>ASSOCIATION loi 1901</p>
+          </v-col>
+
+          <!-- Texte à droite -->
+          <v-col cols="12" md="6">
+
+            <h2>Nous avons des solutions !</h2>
+            <h2>Apprenez sa langue !</h2>
+
           </v-col>
         </v-row>
-
         <v-row>
-          <v-col>
-            <h2>L’objectif de l’association</h2>
-            <p>
-              Prévention des morsures, abandons et euthanasies. En s’adressant prioritairement aux propriétaires
-              ou futurs propriétaires de chien.
+          <v-col class="d-flex flex-column justify-center align-center text-center">
+            <br>
+            <h3>L’objectif de l’association</h3>
+            <p><b>Prévention des morsures, abandons et euthanasies.</b>
+              En s’adressant prioritairement aux <b>propriétaires</b> ou <b>futurs propriétaires</b> de chien.
+              Mais aussi auprès des <b>bénévoles</b> et/ou <b>professionnels</b> œuvrant en refuges.
+              Et en intervenant auprès <b>des enfants et adolescents</b> pour faire connaître les besoins des chiens et
+              l’importance d’y répondre.
             </p>
+            <br>
+            <h3>Les missions de l’association</h3>
             <p>
-              Mais aussi auprès des bénévoles et/ou professionnels œuvrant en refuges.
+              <b>Former les propriétaires ou futurs propriétaires de chien</b> sur l’éducation, le langage canin et les
+              troubles du comportement.
+              <b>Favoriser le bien-être canin</b> en développant des activités autour de la
+              dépense physique et mentale des chiens.
+              <b>Informer les futures générations</b> à propos de « qu’est-ce ça signifie d’avoir un chien ».
             </p>
-            <p>
-              Et en intervenant auprès des enfants et adolescents pour faire connaître les besoins des chiens et l’importance d’y répondre.
-            </p>
-          </v-col>
-        </v-row>
-
-        <v-row>
-          <v-col>
-            <h2>Les missions de l’association</h2>
-            <p>
-              Former les propriétaires ou futurs propriétaires de chien sur l’éducation, le langage canin
-              et les troubles du comportement.
-            </p>
-            <p>
-              Favoriser le bien-être canin en développant des activités autour de la dépense physique et mentale des
-              chiens.
-            </p>
-            <p>
-              Informer les futures générations à propos de « qu’est-ce ça signifie d’avoir un chien »
-            </p>
+            <br>
           </v-col>
         </v-row>
       </v-container>
@@ -75,11 +108,18 @@
   </v-app>
 </template>
 
+<style>
+.rounded-image {
+  border-radius: 15px; /* Coins arrondis */
+  overflow: hidden;
+}
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'Home',
-});
+@media (max-width: 960px) {
+  /* Styles pour écrans plus petits */
+  .rounded-image {
+    margin-bottom: 20px; /* Espace sous l'image */
+  }
+}
+</style>
+<script setup lang="ts">
 </script>

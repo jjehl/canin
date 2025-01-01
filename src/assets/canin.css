@@ -1,0 +1,12 @@
+h1 {
+    color: rgb(var(--v-theme-text1)); /* Utilise la couleur "primary" du thème Vuetify */
+}
+h2 {
+    color: rgb(var(--v-theme-text2)); /* Utilise la couleur "primary" du thème Vuetify */
+}
+h3 {
+    color: rgb(var(--v-theme-text3)); /* Utilise la couleur "primary" du thème Vuetify */
+}
+
+
+
