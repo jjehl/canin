@@ -7,12 +7,21 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
+// Vue Router
+import router from './router'
+
 // Components
 import App from './App.vue'
 
-const vuetify = createVuetify({
-  components,
-  directives,
-})
+// Configurer Vuetify
+const vuetify = createVuetify({components, directives,})
 
-createApp(App).use(vuetify).mount('#app')
+// Créer l'application Vue
+const app = createApp(App)
+
+// Ajouter les plugins
+app.use(vuetify)
+app.use(router)
+
+// Monter l'application
+app.mount('#app')

@@ -1,30 +1,65 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <v-app>
+    <v-app-bar app>
+      <!-- Partie gauche -->
+      <v-row align="center" class="ml-3">
+        <v-img
+          src="/images/logo-canin-pl.jpg"
+          alt="Logo Canin première langue"
+          contain
+          height="120"
+          width="120"
+        ></v-img>
+        <v-spacer></v-spacer>
+        <v-btn icon href="https://www.facebook.com" target="_blank" alt="Facebook">
+          <v-icon color="black">mdi-facebook</v-icon>
+        </v-btn>
+        <v-btn icon href="https://www.instagram.com" target="_blank" alt="Instagram">
+          <v-icon color="black">mdi-instagram</v-icon>
+        </v-btn>
+      </v-row>
+
+      <!-- Texte ASSOCIATION Loi 1901 -->
+      <v-row align="center" class="ml-3">
+        <v-toolbar-title class="text-h6 black--text">ASSOCIATION Loi 1901</v-toolbar-title>
+      </v-row>
+
+      <!-- Partie droite -->
+      <v-spacer></v-spacer>
+      <v-row align="center" class="mr-3">
+        <v-btn text to="/">Accueil</v-btn>
+        <v-btn text to="/service">Service</v-btn>
+        <v-btn text to="/temoignage">Témoignage</v-btn>
+        <v-btn text to="/contact">Contact</v-btn>
+      </v-row>
+    </v-app-bar>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+.v-row {
+  align-items: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.ml-3 {
+  margin-left: 1rem;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.mr-3 {
+  margin-right: 1rem;
 }
 </style>
+
+
+
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'App',
+});
+</script>
